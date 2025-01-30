@@ -1,0 +1,21 @@
+<app-form></app-form>
+<p *ngIf="isAllowed">heloooo</p>
+
+<div *ngFor="let user of userList">
+  <ul>
+    <li>{{user.name}}</li>
+    <li>{{user.age}}</li>
+  </ul>
+</div>
+
+<div>
+  <p [ngSwitch]="selectedValue">
+    <span *ngSwitchCase="'red'">this is red</span>
+    <span *ngSwitchCase="'blue'">this is blue</span>
+    <span *ngSwitchDefault>this is green</span>
+  </p>
+  
+</div>
+<!-- //attribute directives -->
+ <p [ngStyle]="{color:paracolor}">hello</p>
+ <p [ngClass]="{'active':isActive}">hello world</p>
