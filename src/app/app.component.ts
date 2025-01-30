@@ -30,7 +30,10 @@ export class AppComponent {
   // ngstyle 
   paracolor:string ='green'
   //ngclass
-  isActive:boolean=true;
+  isActive:boolean=false;
+  toggle(){
+    this.isActive =!this.isActive;
+  }
 
-  
+
 }
